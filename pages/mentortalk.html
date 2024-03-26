@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Eren - Design Engineer</title>
+    <meta name="title" content="Eren Turkoglu | Software Engineer" />
+    <meta name="description" content="This is my personal site." />
+    <link rel="icon" type="image/png" href="/img/" />
+    <link rel="stylesheet" href="" />
+    <link rel="icon" type="image/png" href="/img/teteee.png" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "mkj2dot",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/pattern-2.svg" />
+    <link rel="preload" as="image" href="./assets/images/pattern-3.svg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo transition-color"
+          >Eren <span class="designer">Design Engineer</span></a
+        >
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="/pages/about.html" class="navv" data-nav-toggler
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a href="/pages/essays.html" class="navv" data-nav-toggler
+                >Blog</a
+              >
+            </li>
+
+            <li>
+              <a href="/pages/feed.html" class="navv" data-nav-toggler>Feed</a>
+            </li>
+
+            <li>
+              <a href="/pages/feed.html" class="navv" data-nav-toggler
+                >Archive</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
