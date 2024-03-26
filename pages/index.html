@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Eren - Design Engineer</title>
+    <meta name="title" content="Eren Turkoglu | Software Engineer" />
+    <meta name="description" content="This is my personal site." />
+    <link rel="icon" type="image/png" href="/img/" />
+    <link rel="stylesheet" href="" />
+    <link rel="icon" type="image/png" href="/img/teteee.png" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "mkj2dot",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/pattern-2.svg" />
+    <link rel="preload" as="image" href="./assets/images/pattern-3.svg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="/pages/home.html" class="logo transition-color"
+          >Eren <span class="designer">Design Engineer</span></a
+        >
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="active">
+              <a href="/pages/about.html" class="navv" data-nav-toggler
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a href="/pages/essays.html" class="navv" data-nav-toggler
+                >Blog</a
+              >
+            </li>
+
+            <li>
+              <a href="/pages/feed.html" class="navv" data-nav-toggler>Feed</a>
+            </li>
+
+            <li>
+              <a href="/pages/feed.html" class="navv" data-nav-toggler
+                >Archive</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- IT'S ME  -->
+    <section id="myname" class="tags" aria-labelledby="tag-label">
+      <div class="container">
+        <h1 class="section-text headlinebg">
+          <span class="span">Eren. </span>
+
+          A designer and developer building digital products.
+        </h1>
+      </div>
+    </section>
+
+    <!-- selected work -->
+    <div class="container">
+      <h3 class="selected-paragraph">Selected work</h3>
+    </div>
+
+    <!-- 
+        WORK
+      -->
+
+    <section
+      class="section recent-post"
+      id="recent"
+      aria-labelledby="recent-label"
+    >
+      <div class="container">
+        <div class="spaceone">
+          <h2 class="section-h">Mentortalk</h2>
+          <a href="/pages/mentortalk.html" class="read">Read more</a>
+        </div>
+        <p class="p-work">Get advice from the best in one call.</p>
+
+        <div class="workimg">
+          <a href="/work.html">
+            <img class="bigimg" src="/img/bigimg.png" alt="big" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- waitlist -->
+    <section id="waitlist">
+      <div class="border-top"></div>
+      <div class="container">
+        <h2 class="joinme">Join my personal waitlist</h2>
+        <p class="joinme-p">
+          I'm currently working on a new project and want to inform you first
+          when it's ready. I therefore created this personal waitlist. I will
+          never spam you and will only update you when I have something really
+          useful to share.
+        </p>
+
+        <div class="wrapper">
+          <input
+            class="inputwait"
+            type="text"
+            placeholder="james.bond@domain.com"
+          />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 12l14 0"></path>
+              <path d="M13 18l6 -6"></path>
+              <path d="M13 6l6 6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="border-bottom"></div>
+    </section>
+    <!-- footer -->
+    <div class="container">
+      <footer>
+        <div class="footer">
+          <div class="one">
+            <h3 class="erenfooter">Eren's personal site</h3>
+            <p class="paragraph">Building digital products.</p>
+          </div>
+          <div class="two"></div>
+          <div class="three"></div>
+          <div class="four">
+            <h3>Pages</h3>
+            <a class="link" href="/index.html">Home</a>
+            <a class="link" href="/about.html">About</a>
+            <a class="link" href="/feed.html">Feed</a>
+            <a class="link" href="/archive.html">Archive</a>
+            <a class="link" href="/">Contact</a>
+          </div>
+          <div class="five">
+            <h3>Connect</h3>
+            <a class="link" href="/index.html">x.com</a>
+            <a class="link" href="/about.html">IMessage</a>
+            <a class="link" href="/feed.html">Linkedin</a>
+            <a class="link" href="/archive.html">Email</a>
+            <a class="link" href="/">Github</a>
+          </div>
+        </div>
+        <div class="copyright"><h3>Copyright Eren 2024</h3></div>
+      </footer>
+    </div>
+    <!-- 
+    - #BACK TO TOP
+  --></body>
+</html>
