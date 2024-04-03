@@ -7,25 +7,25 @@
     <script>
       (function (d) {
         var config = {
-            kitId: "mkj2dot",
+            kitId: 'mkj2dot',
             scriptTimeout: 3000,
             async: true,
           },
           h = d.documentElement,
           t = setTimeout(function () {
             h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
           }, config.scriptTimeout),
-          tk = d.createElement("script"),
+          tk = d.createElement('script'),
           f = false,
-          s = d.getElementsByTagName("script")[0],
+          s = d.getElementsByTagName('script')[0],
           a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
         tk.async = true;
         tk.onload = tk.onreadystatechange = function () {
           a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
           f = true;
           clearTimeout(t);
           try {
@@ -101,6 +101,7 @@
         </nav>
       </div>
     </header>
+
     <!-- fin de nav -->
     <div class="container">
       <div class="turkoglu">
@@ -156,18 +157,18 @@
           <div class="two_eren_xp">
             <h2 class="words">Design Engineer (self-employed)</h2>
             <div class="margintop-two">
-              <p class="yearDate">06 / 2023 - <span class="now">Now</span></p>
-              <p class="marginp">
-                Building an ecosystem around globalization with a team of 8.
-              </p>
+              <p class="yearDate">11 / 2023 - <span class="now">Now</span></p>
+              <p class="marginp">I develop projects from design to code.</p>
             </div>
             <!-- experience 2   -->
             <div class="two_eren_xp">
-              <h2 class="words-2">Design Engineer (self-employed) at ?</h2>
+              <h2 class="words-2">Design Engineer (internship) at ?</h2>
               <div class="margintop-two">
-                <p class="yearDate">06 / 2023 - <span class="now">Now</span></p>
+                <p class="yearDate">
+                  06 / 2023 - <span class="now">Search</span>
+                </p>
                 <p class="marginp">
-                  Building an ecosystem around globalization with a team of 8.
+                  I'm looking for an internship in a startup to help the world.
                 </p>
               </div>
             </div>
@@ -238,73 +239,116 @@
       <!-- bucket list and apps -->
       <!-- class="w-full grid md:grid-cols-3 grid-rows-2 md:grid-rows-1 grid-cols-1 mb-32" -->
       <section id="stuff">
-        <div class="container">
-          <div class="slider-area">
-            <div class="wrapperapp hero">
-              <div class="item">
-                <img class="logo" alt="expedia" src="/img/app_expedia.jpg" />
+        <div class="flex">
+          <div>
+            <div>
+              <h1 class="photoh">Apps I like using</h1>
+            </div>
+            <div class="slider-area">
+              <div class="wrapperapp hero">
+                <div class="item">
+                  <img class="logo" alt="expedia" src="/img/app_expedia.jpg" />
+                </div>
+                <div class="item">
+                  <img class="logo" alt="cron" src="/img/app_cron.jpg" />
+                </div>
+                <div class="item">
+                  <img
+                    class="logo"
+                    alt="finanzguru"
+                    src="/img/app_finanzguru.jpg"
+                  />
+                </div>
+                <div class="item">
+                  <img class="logo" alt="flight" src="/img/app_flighty.jpg" />
+                </div>
+                <div class="item">
+                  <img
+                    class="logo"
+                    alt="messages"
+                    src="/img/app_messages.jpg"
+                  />
+                </div>
+                <div class="item">
+                  <img class="logo" alt="notion" src="/img/app_notion.jpg" />
+                </div>
+                <div class="item">
+                  <img class="logo" alt="x" src="/img/app_x.jpg" />
+                </div>
               </div>
-              <div class="item">
-                <img class="logo" alt="cron" src="/img/app_cron.jpg" />
-              </div>
-              <div class="item">
-                <img
-                  class="logo"
-                  alt="finanzguru"
-                  src="/img/app_finanzguru.jpg"
-                />
-              </div>
-              <div class="item">
-                <img class="logo" alt="flight" src="/img/app_flighty.jpg" />
-              </div>
-              <div class="item">
-                <img class="logo" alt="messages" src="/img/app_messages.jpg" />
-              </div>
-              <div class="item">
-                <img class="logo" alt="notion" src="/img/app_notion.jpg" />
-              </div>
-              <div class="item">
-                <img class="logo" alt="x" src="/img/app_x.jpg" />
-              </div>
+            </div>
+          </div>
+          <div class="bucket">
+            <div>
+              <h1 class="bucketh">Bucket List</h1>
+              <ul>
+                <div class="flex">
+                  <div class="rect"></div>
+                  <li class="bucket-text-line">Eren</li>
+                </div>
+                <div class="flex">
+                  <div class="rect"></div>
+                  <li class="bucket-text-line">Eren</li>
+                </div>
+                <div class="flex">
+                  <div class="rect"></div>
+                  <li class="bucket-text">Eren</li>
+                </div>
+                <div class="flex">
+                  <div class="rect"></div>
+                  <li class="bucket-text">Eren</li>
+                </div>
+                <div class="flex">
+                  <div class="rect"></div>
+                  <li class="bucket-text">Visit San Francisco</li>
+                </div>
+                <div class="flex">
+                  <div class="rect"></div>
+                  <li class="bucket-text">Found own startup</li>
+                </div>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <!-- books and movie
+    </div>
+
+    <!-- books and movie
 
       
        -->
 
-      <!-- footer -->
-      <div class="container">
-        <footer>
-          <div class="footer">
-            <div class="one">
-              <h3 class="erenfooter">Eren's personal site</h3>
-              <p class="paragraph">Building digital products.</p>
-            </div>
-            <div class="two"></div>
-            <div class="three"></div>
-            <div class="four">
-              <h3>Pages</h3>
-              <a class="link" href="/index.html">Home</a>
-              <a class="link" href="/about.html">About</a>
-              <a class="link" href="/feed.html">Feed</a>
-              <a class="link" href="/archive.html">Archive</a>
-              <a class="link" href="/">Contact</a>
-            </div>
-            <div class="five">
-              <h3>Connect</h3>
-              <a class="link" href="/index.html">x.com</a>
-              <a class="link" href="/about.html">IMessage</a>
-              <a class="link" href="/feed.html">Linkedin</a>
-              <a class="link" href="/archive.html">Email</a>
-              <a class="link" href="/">Github</a>
-            </div>
+    <!-- footer -->
+    <div class="copyright"></div>
+
+    <div class="container">
+      <footer>
+        <div class="footer">
+          <div class="one">
+            <h3 class="erenfooter">Eren's personal site</h3>
+            <p class="paragraph">Building digital products.</p>
           </div>
-          <div class="copyright"><h3>Copyright Eren 2024</h3></div>
-        </footer>
-      </div>
+          <div class="two"></div>
+          <div class="three"></div>
+          <div class="four">
+            <h3>Pages</h3>
+            <a class="link" href="/index.html">Home</a>
+            <a class="link" href="/about.html">About</a>
+            <a class="link" href="/feed.html">Feed</a>
+            <a class="link" href="/archive.html">Archive</a>
+            <a class="link" href="/">Contact</a>
+          </div>
+          <div class="five">
+            <h3>Connect</h3>
+            <a class="link" href="/index.html">x.com</a>
+            <a class="link" href="/about.html">IMessage</a>
+            <a class="link" href="/feed.html">Linkedin</a>
+            <a class="link" href="/archive.html">Email</a>
+            <a class="link" href="/">Github</a>
+          </div>
+        </div>
+        <div class="copyright"><h3>Copyright Eren 2024</h3></div>
+      </footer>
     </div>
     <script src="/script.js"></script>
   </body>
