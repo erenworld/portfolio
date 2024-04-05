@@ -7,25 +7,25 @@
     <script>
       (function (d) {
         var config = {
-            kitId: "mkj2dot",
+            kitId: 'mkj2dot',
             scriptTimeout: 3000,
             async: true,
           },
           h = d.documentElement,
           t = setTimeout(function () {
             h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
           }, config.scriptTimeout),
-          tk = d.createElement("script"),
+          tk = d.createElement('script'),
           f = false,
-          s = d.getElementsByTagName("script")[0],
+          s = d.getElementsByTagName('script')[0],
           a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
         tk.async = true;
         tk.onload = tk.onreadystatechange = function () {
           a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
           f = true;
           clearTimeout(t);
           try {
@@ -109,66 +109,16 @@
               >Archive</a
             >
             <p class="slash">/</p>
-            <span>Projects</span>
+            <span>Posts</span>
           </div>
+          <div class="grid">e</div>
         </div>
 
         <!--  -->
       </section>
       <!--  -->
-      <section id="archiver">
-        <!--  -->
+      <section id="ideas"></section>
 
-        <!--  -->
-
-        <!--  -->
-
-        <!--  -->
-        <div class="space">
-          <div class="flex">
-            <img class="file" src="/img/filesvg.svg" alt="" />
-            <a href="/archive/projects/miro-chat.html" class="section-h"
-              >Miro Chat</a
-            >
-          </div>
-          <div class="flex">
-            <p class="paragraph-archive">
-              A chatbot that generates answers to your questions.
-            </p>
-          </div>
-          <div class="flex">
-            <p class="paragraph-archive">
-              <img src="/img/2024.png" class="svg" alt="2024" />
-            </p>
-          </div>
-          <a href="/pages/mentortalk.html" class="read rightpad"
-            >Open<img src="/img/arrowof.svg" class="arrow" alt="arrow" />
-          </a>
-        </div>
-        <!--  -->
-        <div class="space">
-          <div class="flex">
-            <img class="file" src="/img/filesvg.svg" alt="" />
-            <a href="/archive/projects/campcalm.html" class="section-h"
-              >Campcalm</a
-            >
-          </div>
-          <div class="flex">
-            <p class="paragraph-archive">
-              Where campers can submit and review campgrounds.
-            </p>
-          </div>
-          <div class="flex">
-            <p class="paragraph-archive">
-              <img src="/img/2024.png" class="svg" alt="2024" />
-            </p>
-          </div>
-
-          <a href="/pages/mentortalk.html" class="read rightpad"
-            >Open<img src="/img/arrowof.svg" class="arrow" alt="arrow" />
-          </a>
-        </div>
-      </section>
       <!-- readme -->
       <section id="readme">
         <div class="container_me">

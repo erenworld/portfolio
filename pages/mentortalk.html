@@ -17,25 +17,25 @@
     <script>
       (function (d) {
         var config = {
-            kitId: "mkj2dot",
+            kitId: 'mkj2dot',
             scriptTimeout: 3000,
             async: true,
           },
           h = d.documentElement,
           t = setTimeout(function () {
             h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
           }, config.scriptTimeout),
-          tk = d.createElement("script"),
+          tk = d.createElement('script'),
           f = false,
-          s = d.getElementsByTagName("script")[0],
+          s = d.getElementsByTagName('script')[0],
           a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
         tk.async = true;
         tk.onload = tk.onreadystatechange = function () {
           a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
           f = true;
           clearTimeout(t);
           try {
@@ -228,6 +228,22 @@
             <div class="one">
               <h3 class="erenfooter">Eren's personal site</h3>
               <p class="paragraph">Building digital products.</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="svg1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.7783 4.22183L4.22197 19.7782M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM18.3644 18.364C17.1928 19.5355 13.3939 17.636 9.87913 14.1213C6.36441 10.6066 4.46492 6.8076 5.63649 5.63603C6.80807 4.46446 10.6071 6.36395 14.1218 9.87867C17.6365 13.3934 19.536 17.1924 18.3644 18.364Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
             </div>
             <div class="two"></div>
             <div class="three"></div>
