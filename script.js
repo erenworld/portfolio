@@ -1,7 +1,7 @@
-const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
+const wrapper = document.querySelector('.wrapper');
+const carousel = document.querySelector('.carousel');
+const firstCardWidth = carousel.querySelector('.card').offsetWidth;
+const arrowBtns = document.querySelectorAll('.wrapper i');
 const carouselChildrens = [...carousel.children];
 
 let isDragging = false,
@@ -18,29 +18,29 @@ carouselChildrens
   .slice(-cardPerView)
   .reverse()
   .forEach((card) => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+    carousel.insertAdjacentHTML('afterbegin', card.outerHTML);
   });
 
 // Insert copies of the first few cards to end of carousel for infinite scrolling
 carouselChildrens.slice(0, cardPerView).forEach((card) => {
-  carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+  carousel.insertAdjacentHTML('beforeend', card.outerHTML);
 });
 
 // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
-carousel.classList.add("no-transition");
+carousel.classList.add('no-transition');
 carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
+carousel.classList.remove('no-transition');
 
 // Add event listeners for the arrow buttons to scroll the carousel left and right
 arrowBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+  btn.addEventListener('click', () => {
+    carousel.scrollLeft += btn.id == 'left' ? -firstCardWidth : firstCardWidth;
   });
 });
 
 const dragStart = (e) => {
   isDragging = true;
-  carousel.classList.add("dragging");
+  carousel.classList.add('dragging');
   // Records the initial cursor and scroll position of the carousel
   startX = e.pageX;
   startScrollLeft = carousel.scrollLeft;
@@ -54,24 +54,24 @@ const dragging = (e) => {
 
 const dragStop = () => {
   isDragging = false;
-  carousel.classList.remove("dragging");
+  carousel.classList.remove('dragging');
 };
 
 const infiniteScroll = () => {
   // If the carousel is at the beginning, scroll to the end
   if (carousel.scrollLeft === 0) {
-    carousel.classList.add("no-transition");
+    carousel.classList.add('no-transition');
     carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
+    carousel.classList.remove('no-transition');
   }
   // If the carousel is at the end, scroll to the beginning
   else if (
     Math.ceil(carousel.scrollLeft) ===
     carousel.scrollWidth - carousel.offsetWidth
   ) {
-    carousel.classList.add("no-transition");
+    carousel.classList.add('no-transition');
     carousel.scrollLeft = carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
+    carousel.classList.remove('no-transition');
   }
 
   // Clear existing timeout & start autoplay if mouse is not hovering over carousel
@@ -86,36 +86,11 @@ const infiniteScroll = () => {
 // };
 // autoPlay();
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
+carousel.addEventListener('mousedown', dragStart);
+carousel.addEventListener('mousemove', dragging);
+document.addEventListener('mouseup', dragStop);
+carousel.addEventListener('scroll', infiniteScroll);
+wrapper.addEventListener('mouseenter', () => clearTimeout(timeoutId));
+wrapper.addEventListener('mouseleave', autoPlay);
 
-// let salaries = {
-//   John: 100,
-//   Ann: 160,
-//   Pete: 130,
-// };
-
-// Écrivez le code pour additionner tous les salaires et les enregistrer dans la variable sum. Devrait être égale à 390 dans l’exemple ci-dessus.
-
-// Si salaries est vide, le résultat doit être 0.
-// let sum = 0;
-// for (let key in salaries) {
-//   sum += salaries[keys];
-// }
-// alert(sum);
-
-////////////////////
-// Créez une fonction multiplyNumeric(obj) qui multiplie
-// toutes les valeurs de propriétés numériques de obj par 2.
 //
-// function multiplyNumeric(obj) {
-//   for (let key in obj) {
-//     if (typeof obj[key] == "number") {
-//       obj[key] *= 2;
-//     }
-//   }
-// }
