@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
+@font-face {
+    font-family: Shohe;
+    src: url("./shone2.otf") format("opentype");
+}
+
+body, html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--mono5) transparent;
+}
+
+:root {
+    --body-margin-left: 0; 
+    --body-margin-right: 0; 
+    --page-top: 96px;
+    --direction: to bottom;
+    --mask-visible: rgba(255, 255, 255, 1);
+    --mask-hidden: rgba(255, 255, 255, 0);
+}
+
+.blur {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    --h: min(96px, var(--page-top));
+    height: var(--h);
+    width: 100vw;
+    margin-left: calc(-1 * var(--body-margin-left));
+    margin-right: calc(-1 * var(--body-margin-right));
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    opacity: 0.95;
+    background: rgba(26, 26, 26, 0.8);
+    -webkit-mask-image: linear-gradient(var(--direction), var(--mask-visible) 25%, var(--mask-hidden));
+    mask-image: linear-gradient(var(--direction), var(--mask-visible) 25%, var(--mask-hidden));
+}
+
 ::selection {
     background-color: rgba(111, 110, 110, 0.356);
 }
@@ -15,45 +59,41 @@ body {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 20px;
 }
 
 h3 {
-    color: white;
-    font-size: 14px;
+    color: rgb(229, 229, 229);
+    font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.3px;
-    line-height: 20px;
-}
-
-p {
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
     letter-spacing: 0.2px;
     line-height: 20px;
 }
 
-.pfooter {
-    color: rgb(204, 204, 204);
-    font-size: 12px;
+p {
+    color: rgb(229, 229, 229);
+    font-size: 15px;
     font-weight: 300;
-    letter-spacing: -.28px;
-    line-height: 20px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-family: 'Shohe';
 }
+
 
 a {
     color: rgb(204, 204, 204);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    letter-spacing: -.28px;
-    line-height: 20px;
+    letter-spacing: 0.2px;
+    line-height: 26px;
     text-decoration: none;
 }
 
 .news {
     font-family: 'Newsreader', serif;
     font-size: 17px;
+    color: rgb(229, 229, 229);
+
 }
 
 
@@ -82,16 +122,16 @@ a {
     color: rgb(160, 160, 160);
     font-size: 14px;
     font-weight: 350;
-    letter-spacing: -.28px;
-    line-height: 20px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
 }
 
 .gridSubtitle {
     color: rgb(216, 216, 216);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 350;
-    letter-spacing: -.28px;
-    line-height: 20px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
     border-bottom: 1px solid rgb(112, 112, 112);
     width: 47px;
 }
@@ -110,4 +150,83 @@ a {
     position: absolute;
     top: 129px;
     left: 300px;
+}
+
+
+/*ARTICLES*/
+.articlesDiv {
+    border-top: 0.7px solid #2E2E2E;
+    border-bottom: 0.7px solid #2E2E2E;
+
+}
+
+.titleanddate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.year {
+    color: #707070;
+    font-weight: 400;
+}
+.datespan {
+    padding-left: 50px;
+    color: #707070;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.articleTitle {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.article {
+    justify-content: space-between;
+    
+}
+
+.articleParagraph {
+    font-size: 15px;
+}
+
+.border {
+    border-bottom: 0.7px solid #2E2E2E;
+
+}
+
+
+
+/*now*/
+#now {
+    margin-bottom: 70px;
+}
+
+.footer {
+    border-top: 0.7px solid #353434;
+    bottom: 0;
+    position: relative;
+}
+
+
+.pfooter {
+    color: rgb(129, 129, 129);
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    margin: 0 auto;
+}
+
+.footerdiv {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
